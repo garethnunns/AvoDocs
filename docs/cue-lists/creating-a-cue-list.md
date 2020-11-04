@@ -113,7 +113,7 @@ Shape Tracking in Cue Lists
 Shapes can track between cues in cue lists. If shape tracking is
 enabled, a shape started in a cue will continue through following cues.
 Shape tracking is enabled using the \[Shape Tracking\] option in the
-Playback Options for the cue list - see [Cue List Options](cue-list-options.md#cue-list-options-playback-tab).
+playback Options for the cue list - see [Cue List Options](cue-list-options.md#cue-list-options-playback-tab).
 
 Cues containing shapes have a button for each shape.
 
@@ -153,7 +153,7 @@ can manually allocate **Autoloads** to cues.
 To automatically record active playbacks as Autoloads:
 
 1. After selecting **Cue List Record**, turn on \[Autoload Live Playbacks\]
-in the \[Advanced Options\] menu of the cuelist record screen.
+in the \[Advanced Options\] menu of the cue list record screen.
 
 2. Turn on the playbacks you wish to load for this cue.
 
@@ -210,7 +210,7 @@ allows you to set up custom actions which can be performed when a cue in
 a cue list fires; for example you may want to lamp on your fixtures as
 the first cue in the cue list.
 
-1. Press \[Playback Options\]
+1. Press \<Options\> (or the \[Options\] softkey on the root menu)
 
 2. Select the **cue list**
 
@@ -236,8 +236,8 @@ playback where **n** is the cue number.
 
 Shortcut | Action
 --- | ---
-\<Record\>, \<Connect\>, **n**, \<Enter\> | Record cue **n**
-\<Copy\>, \<Connect\>, n | Copy cue **n**
-\<Delete\>, \<Connect\>, n | Delete cue **n**
-\<Include\>, \<Connect\>, n | Include cue **n**
-\<Connect\>, n, \<Go\> | Go cue **n**
+\<Record\>, \<Connect/Cue\>, **n**, \<Enter\> | Record cue **n**
+\<Copy\>, \<Connect/Cue\>, n | Copy cue **n**
+\<Delete\>, \<Connect/Cue\>, n | Delete cue **n**
+\<Include\>, \<Connect/Cue\>, n | Include cue **n**
+\<Connect/Cue\>, n, \<Go\> | Go cue **n**

@@ -1,20 +1,21 @@
-FROM homebrew/brew as builder
+FROM pandoc/latex as builder
 
-RUN brew install \
-    node \
-    pandoc \
-    texlive \
-    wget
+ENTRYPOINT ["/bin/sh", "-c"]
 
-# magical fix...
-RUN wget http://mirror.ctan.org/systems/texlive/tlnet/update-tlmgr-latest.sh \
-    && chmod +x update-tlmgr-latest.sh \
-    && ./update-tlmgr-latest.sh
+RUN apk add --update \
+    bash \
+    lcms2-dev \
+    libpng-dev \
+    gcc \
+    g++ \
+    make \
+    autoconf \
+    automake \
+    nodejs \
+    npm \
+  && rm -rf /var/cache/apk/*
 
-# LaTeX packages
-RUN tlmgr update --self
-
-# get font files 
+# get font files
 RUN fmtutil-sys --all
 
 RUN tlmgr install \
@@ -55,18 +56,18 @@ RUN npm install --unsafe-perm=true
 COPY ./docs /app/docs
 COPY ./parse /app/parse
 
-#localhost
+# localhost
 FROM builder AS web
 WORKDIR /app/website
 EXPOSE 3000 35729
-CMD ["npm", "run", "start"]
+CMD ["npm run start"]
 
 # PDF build
 FROM builder AS pdf
 WORKDIR /app/parse
-CMD ["node","pdf.js"]
+CMD ["node pdf.js"]
 
 # app build
 FROM builder AS app
 WORKDIR /app/website
-CMD ["npm", "run", "app-build"]
+CMD ["npm run app-build"]

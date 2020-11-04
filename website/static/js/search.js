@@ -1,25 +1,34 @@
 if (typeof module === 'object') {window.module = module; module = undefined;}
-
+$(document).ready(function () {
 var list = [];
 var options = {
   shouldSort: true,
-  threshold: 0.2,
-  location: 0,
-  distance: 2000,
-  maxPatternLength: 32,
-  minMatchCharLength: 3,
+  threshold: 0.3,
+  distance: 10000,
   keys: [{
     name: 'title',
     weight: 0.7
   }, {
     name: 'content',
     weight: 0.3
+  }, {
+    name: 'desc',
+    weight: 0.5
+  }, {
+    name: 'tags',
+    weight: 0.8
   }]
 };
 var fuse = new Fuse(list, options); // "list" is the item array
 
+let versions = $('a[href="/versions"]');
+let version = versions.text();
+if (version == "") {
+  version = "next";
+}
+
 $.ajax({
-  url: '/index.json',
+  url: '/index-' + version + '.json',
   dataType: 'application/json',
   complete: function(data){
     fuse.list = JSON.parse(data.responseText);
@@ -63,7 +72,18 @@ $(document).ready(function() {
     }
     for (var result in results) {
       var item = results[result];
-      var li = `<li><a href="/docs/` + item.url + `"><div class="title">` +  item.title + '</div><div class="subtitle">' + item.subtitle + `</div></a></li>`;
+      var versionPath = "";
+
+      var windowPath = window.location.pathname;
+      windowPath = windowPath.split("/");
+      if (windowPath.length >= 3) {
+        if (version == windowPath[2]) {
+          versionPath = version + "/";
+        }
+      }
+
+
+      var li = `<li><a href="/docs/` + versionPath + item.url + `"><div class="title">` +  item.title + '</div><div class="subtitle">' + item.subtitle + `</div></a></li>`;
       ul.append(li);
     }
     if (results.length == 0) {
@@ -73,5 +93,5 @@ $(document).ready(function() {
     ul.show();
   });
 });
-
+});
 if (window.module) module = window.module;

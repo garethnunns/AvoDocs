@@ -17,7 +17,7 @@ constantly updating the library.
 
 We recommend that you should update the library from time to time to
 take advantage of new fixtures, as well as receiving bug fixes for
-personalities and new features which may be added such as subfixtures.
+personalities and new features which may be added such as sub-fixtures.
 
 Downloading fixture personalities from Avolites
 -----------------------------------------------
@@ -55,9 +55,9 @@ icon in the Cache column for any fixture. Alternatively you can get this
 file by clicking on the Download link at the top of the screen, then
 clicking on "Titan Fixture Library".
 
-  ---------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![exclamation](/docs/images/exclamation.png)   Updating will overwrite any custom personalities you have stored in the library. To avoid this, store your custom personalities in the user personalities folder (see next section for details).
-  ---------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+> Updating will overwrite any custom personalities you have stored in the 
+library. To avoid this, store your custom personalities in the user 
+personalities folder (see next section for details).
 
 **To update a console use the following procedure:**
 

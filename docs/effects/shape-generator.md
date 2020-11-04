@@ -12,22 +12,25 @@ to the pan and tilt attributes, would cause the fixture to move its beam
 in a circular pattern around its current position. You can set the size
 of the circle and the speed of the circle movement.
 
+Shapes are most useful when used with a group of fixtures. You can then choose to
+either apply the shape identically to all the fixtures, or offset them
+so that the shape runs along the fixtures creating *"wave"* or *"ballyhoo"*
+type effects (called the **Spread** or **Phase** of the shape). This allows
+you to very quickly create impressive light shows.
+
 In addition to position shapes, there are a large number of other shapes
 available in Titan. The shapes are defined for a particular attribute
 such as colour, dimmer, focus and so on.
 
-A further category of shapes is the **Block Shape**. This type of shape
-blocks out other shapes, preventing them from running. For example, if
+Titan also has a **Mask FX** function which lets you mask out certain
+shapes, preventing them from appearing on the lights. For example, if
 some fixtures are running a Circle shape, and then a playback is fired
-which has a Block Pan/Tilt shape on some of the fixtures, those fixtures
+which has a Position Mask Shape programmed for some of the fixtures, those fixtures
 will stop running the circle shape. This can be very useful to modify
-playbacks at showtime when used with the
-[playback priority feature](../cues/playback-options.md#priority).
+playbacks at show time. See
+the [Mask FX](shape-generator.md#masking-shapes-using-mask-fx) section below for details.
 
-When you use a shape with more than one fixture, you can choose to
-either apply the shape identically to all the fixtures, or offset them
-so that the shape runs along the fixtures creating *"wave"* or *"ballyhoo"*
-type effects. This is called the **Phase** of the shape.
+
 
 ![Capture Visualiser with a shape running across fixtures](/docs/images/Capture-Visualiser-with-a-shape-running-across-fixtures.png)
 
@@ -86,9 +89,9 @@ a particular shape.
     shapes separately to give different directions, speeds etc (see
     [later](#changing-size-and-speed-of-a-shape))
 
--   If the selected fixture has subfixtures (cells) then you will be
+-   If the selected fixture has sub-fixtures (cells) then you will be
     given the option to run the shape on the main fixture, keeping all
-    cells identical, or spread across the subfixtures/cells. The options
+    cells identical, or spread across the sub-fixtures/cells. The options
     are:
     -   \[Run on Super Fixtures\] - cells are ignored, fixture operates as one
     block
@@ -186,6 +189,10 @@ give the full range of colours. In this case you would set one of the
 shapes to have a Phase Offset of 180 degrees.* Without the phase offset,
 both shapes would reach full at the same time.
 
+>   After adjusting offset or phase, it is useful to **Restart** the shape so
+    you can see how it will look when fired from a cue. Press \[Restart Shapes\]
+    on the shape Edit menu.
+
 Shape Direction
 ---------------
 
@@ -237,7 +244,7 @@ Using Shapes in Cues
 
 When you save a shape into a cue, you can set the playback fader to
 control the size and/or speed of the shape in
-[playback options](../cues/playback-options.md) to give you more options at
+playback [Options](../cues/playback-options.md) to give you more options at
 show time; you can also control the size and speed from separate
 [Size Master and Speed Master faders](../running-the-show/playback-controls.md#speed-and-size-masters).
 
@@ -245,9 +252,40 @@ You can use shapes in a cue list, see
 [Shape Tracking in Cue Lists](../cue-lists/creating-a-cue-list.md#shape-tracking-in-cue-lists)
 on how the shapes will behave as you go from cue to cue.
 
-You can also adjust parameters of the shape at playback time using the
-\[Select Shape\] menu, which is on the \[Edit\] menu of the Shape Generator
-menu.
+You can adjust a running shape at playback time, see 
+[Editing a Live Running Shape](editing-shapes-and-effects.md#editing-a-live-running-shape).
+
+
+Masking shapes using Mask FX
+--------------------
+
+It is often useful to be able to partially or completely stop a running shape, for example
+to freeze the look at the end of a song or to modify the look for different moments.
+
+The \[Mask FX\] softkey on the Shapes and Effects menu allows you to record a mask which will
+stop shapes (both normal shapes and key frame shapes). The mask can be set to stop all shapes on all fixtures, or only shapes controlling certain attributes. You 
+can also select certain fixtures for the mask and leave other fixtures unaffected.
+
+To create a mask:
+
+1.	Press \[Mask FX\] on the Shapes and Effects menu.
+
+2.	The Attribute Bank buttons (Position, Colour etc) will flash. Choose which attributes you want to mask
+	by toggling the buttons on and off.
+	
+3.	If no fixtures are selected the mask will apply to all fixtures. If you only want it to apply to certain fixtures, select them now.
+
+4.	Press \[Create Mask Shape\]. (The \[Create Mask FX\] button will mask both shapes and pixel map effects.)
+
+5.	You should see the mask taking effect on the output - if you store it in a playback, the playback
+	will stop the shapes it's set to mask while it is active.
+	
+- The \[Clear mask from programmer\] button will remove any mask shapes or mask effects from the programmer for all fixtures.
+
+- This function replaces the **Block Shapes** function of previous versions. Shows containing Block Shapes from previous versions
+  will load and work as expected, but the block shapes will be renamed "Mask".
+
+- The personality library may need updating for this to work. 
 
 Storing Shapes in Palettes
 --------------------------

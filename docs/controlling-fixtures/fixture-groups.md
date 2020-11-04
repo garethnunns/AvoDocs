@@ -51,7 +51,7 @@ playback faders), or press C \[Store\] to store as a numbered group.
     Quick Record - on the first touch the button will turn red with a
     +, on the second touch the group will be recorded.
 
-![Quick Record](/docs/images/quick-record.png)
+![Quick Record](/docs/images/Quick-Record.png)
 
 -   To select all the fixtures/dimmers in a group, just press the button
     for the group.
@@ -104,6 +104,11 @@ fixtures of the same type (for example, \[All Robe Pointe\]). Another
 group is created each time you patch a quantity of fixtures (for
 example, \[4 BB4\].) This function can be turned off using \[Auto
 Groups\] in the User Settings.
+
+-  "All" fixture type groups can't be deleted - when you press Delete
+    the group will become unassigned and be moved to the Show Library.
+    This is also the case if a group has been used in a pixel effect. 
+    Titan shows a warning message. 
 
 Fixture Order and Fixture Layout in Groups
 ------------------------------------------

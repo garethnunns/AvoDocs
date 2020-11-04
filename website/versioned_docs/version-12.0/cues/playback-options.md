@@ -12,7 +12,7 @@ on the root menu, then press the **select** button of the playback to be
 edited. A list of option categories will open on the softkeys; a window
 will also open giving a touch-friendly version of the playback options.
 
-![Playback Options window for cue showing playback tab](/docs/images/Playback-Options-window-for-cue-showing-playback-tab.png)
+![Playback Options window for cue showing playback tab](/docs/images/Playback-Options-Playback-Tab.png)
 
 Click on the \[i\] button for a help window on each setting.
 
@@ -99,7 +99,7 @@ Default speed for this playback in BPM. This can be
 overridden by a [Rate or BPM master](../running-the-show/playback-controls.md#speed-and-size-masters), 
 or if the playback is a [chase](../chases.md), can be modified using the wheels.
 
-### Xfade
+### XFade
 Default crossfade for this playback. If the playback is a
 [chase](../chases.md), this can be modified using the wheels and the changes will be
 saved here.
@@ -111,7 +111,7 @@ running multiple playbacks together
 ### Flash Fade In / Flash Fade Out
 Sets the fade in/fade out time for
 this playback when it is fired using the flash button. By default these
-are set to *"AsIn"* and *"AsOut"* which will use the fade time set for the
+are set to *"As In"* and *"As Out"* which will use the fade time set for the
 playback in the [Times menu](cue-timing.md). This option allows you to set a different
 flash action for the playback. *Note that the [Key Profile](../system-settings/key-profiles.md) for the flash
 button must be set to **Timed Flash** for this to work.*

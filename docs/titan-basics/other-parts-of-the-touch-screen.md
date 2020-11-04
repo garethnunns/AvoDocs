@@ -1,7 +1,7 @@
 ---
 id: other-parts-of-the-touch-screen
-title: Other parts of the touch screen
-sidebar_label: Other parts of the touch screen
+title: Other Parts of the Touch Screen
+sidebar_label: Other Parts of the Touch Screen
 ---
 
 The Menu/Softkeys
@@ -22,15 +22,16 @@ next to the screen.
 The vertical bar to the left of the softkeys shows you which menu you
 are currently in. You can \'latch\' the menu to keep the current command
 active (so that you don't have to keep reselecting it) by pressing the
-Menu Latch button (ML Menu on Pearl Expert & Tiger Touch Mk1). The menu
-bar turns red when latched.
+\<Menu Latch\> button (\<ML Menu\> on Pearl Expert & Tiger Touch 1). The menu
+bar turns red when latched. This is useful for example when copying or moving
+playbacks to rearrange the console.
 
 The area to the top left of the menu buttons with an Avolites logo in
 the background is the system prompt area which shows instructions to the
 user and information from the console. The last commands you used are
 also shown here, for use with the Undo function.
 
-![Prompt Area](/docs/images/systemarea.png)
+![Prompt Area](/docs/images/System-Area.png)
 
 On the screen above the control wheels, the current function of the
 wheels is shown on a simulated roller. If fixture attributes are being
@@ -56,7 +57,7 @@ available:
   ![Softkey - Action](/docs/images/Softkey-Action.png)                                                                      
   **Action button** - console will carry out the action shown                                     
   
-  ![Softkey - Option](/docs/images/softkey-option.png) 
+  ![Softkey - Option](/docs/images/Softkey-Option.png) 
   **Option button** - cycles through a range of options   
   
   ![Softkey - New Menu](/docs/images/Softkey-New-Menu.png) 
@@ -65,7 +66,7 @@ available:
   ![Softkey - Text Entry](/docs/images/Softkey-Text-Entry.png) 
   **Text entry button** - press and enter text using the touch keyboard
 
-The toolbar
+The Toolbar
 -----------
 
 On all consoles except Sapphire Touch, across the very top of the screen
@@ -86,7 +87,7 @@ depending on the console).
 
 **Help** shows you the online manual.
 
-**Control Panel** opens a sub-menu allowing changes to monitor settings
+**Control Panel** opens a submenu allowing changes to monitor settings
 and to the USB expert console which links the front panel controls to
 the system. The \'More...\' option opens Windows Control Panel allowing
 you to change the operating system configuration.
@@ -94,7 +95,7 @@ you to change the operating system configuration.
 **Touch Screen Setup** (in Control Panel) opens the setup utility which
 allows you to align touch positions on the screen.
 
-**Usb Expert Console** (in Control Panel) sets up the connection between
+**USB Expert Console** (in Control Panel) sets up the connection between
 the front panel controls and the software. If you are having problems
 this can be used to troubleshoot.
 
@@ -143,9 +144,10 @@ Visualiser
 
 ![Visualiser](/docs/images/Capture-Visualiser-Workspace-Window.png)
 
-Capture visualiser is integrated into Titan from v10.
+Capture visualiser is integrated into Titan from v10. The [Capture Visualiser chapter](../capture-visualiser.md) deals
+with how it works.
 
-The [visualiser](../capture-visualiser.md) gives you a realistic view of the stage, allowing you to
+The visualiser gives you a realistic view of the stage, allowing you to
 pre-program or make changes to your show at home or in your hotel. It
 can also be used in Blind mode for programming during a show.
 
@@ -155,7 +157,7 @@ Undo/Redo
 A short list of recent actions is shown in the prompt area to the left
 of the menu.
 
-![System Area](/docs/images/systemarea.png)
+![System Area](/docs/images/System-Area.png)
 
 You can undo and redo recent actions (including fixture and cue changes)
 by touching the prompt area. This will automatically open the Undo
@@ -180,5 +182,5 @@ symbol as shown below.
 
 If you are in multi-user mode, the Undo History can show a column for
 each user with undo points for that user - open the Context menu and
-select \[Show All Users and Consoles\]. The default setting is \[Show
-Only Current User\].
+select \{Show All Users and Consoles\}. The default setting is \{Show
+Only Current User\}.

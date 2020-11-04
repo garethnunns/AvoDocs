@@ -8,13 +8,13 @@ original_id: playback-controls
 Back up the show
 ----------------
 
-At regular intervals while you are programming, and when you have finished programming (or you've run out of time) and it's showtime, the most important thing is to [save the show](../titan-basics/loading-and-saving-shows.md#saving-the-show). It is important to also back up the show by saving it to a USB drive, enabling you to swap to a different console if there are
+At regular intervals while you are programming, and when you have finished programming (or you've run out of time) and it's show time, the most important thing is to [save the show](../titan-basics/loading-and-saving-shows.md#saving-the-show). It is important to also back up the show by saving it to a USB drive, enabling you to swap to a different console if there are
 problems.
 
 Label the console
 -----------------
 
-When you are running your show you will need to know where everything is. Use the Legend functions to set onscreen labels, or you can't beat the low tech method of marker pen and tape.
+When you are running your show you will need to know where everything is. Use the Legend functions to set on-screen labels, or you can't beat the low tech method of marker pen and tape.
 
 Grand Master fader and assignable masters
 -----------------------------------------
@@ -46,11 +46,7 @@ it as a master. Press the Display button below the encoders to show legends for 
 
 ![Arena Miniscreen](/docs/images/Arena-Miniscreen.png)
 
-  --------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  ![info](/docs/images/info.png)
-
-  If you assign a master to a handle with an LED, the LED will flash if the fader is at zero... just as a reminder to help you work out why no lights are coming on.
-  --------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+> If you assign a master to a handle with an LED, the LED will flash if the fader is at zero... just as a reminder to help you work out why no lights are coming on.
 
 Speed and Size Masters
 ----------------------
@@ -151,12 +147,7 @@ Using [Key Profiles](../system-settings/key-profiles.md), you can set different 
 
 If a Flash Master is configured, this will also master the group flash.
 
---------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-![info](/docs/images/info.png)
-
-You can release all masters by pressing \<Release\> then \[Release All Masters\]. This can be useful if something is being controlled by a master but you are not sure where it is.
---------------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+> You can release all masters by pressing \<Release\> then \[Release All Masters\]. This can be useful if something is being controlled by a master but you are not sure where it is.
 
 Scene Master
 ------------
@@ -330,7 +321,7 @@ is sometimes called "busking", and is where the fun starts!
 
 You can create instant variations by recalling palette values to modify
 your existing cues. Palette values can have fade times saved with them,
-or you can set a fade at showtime for added effect.
+or you can set a fade at show time for added effect.
 
 1. Select some fixtures which are already in use on stage.
 

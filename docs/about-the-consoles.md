@@ -1,17 +1,19 @@
 ---
-id: about-the-consoles 
-title: About the consoles
-sidebar_label: About the consoles
+id: about-the-consoles
+title: Console Hardware
+sidebar_label: Console Hardware Introduction
 ---
 
-This manual is a reference guide to all the functions of Titan consoles.
+This manual covers all types of Avolites console, and while the operation
+of Titan is pretty much the same on all of them, the layout and connectivity
+of each console is different.
 
-We explain things in the order you're most likely to use them, so we
-start with how to set up the console, then look at patching lights,
-controlling lights and how to program cues.
+This section has details
+about each individual console design in turn, showing where the controls are and
+how they differ between consoles, and the various connections available on the
+back panel.
 
-As this manual covers all types of console, this section has details
-about each individual console design in turn; where the controls are and
-where the connections are.
+The USB connected [T1 and T2](about-the-consoles/t1-and-t2.md) devices are also 
+described, and the [TNP network processing unit](about-the-consoles/tnp.md).
 
-
+In addition, the different console extension [fader wings](about-the-consoles/fader-wings.md) are covered.
