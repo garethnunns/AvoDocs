@@ -85,6 +85,12 @@ describe("Docs", () => {
             })
           })
 
+          describe("Spelling", () => {
+            it(`Checking spelling`, () => {
+              const errors = spelling(filename, version.lang)
+              assert.deepEqual(errors, [])
+            })
+          })
         })
       }
     })
