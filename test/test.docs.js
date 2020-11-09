@@ -1,6 +1,7 @@
 const assert = require('assert')
 const path = require('path')
 const fs = require('fs')
+const spelling = require("./spelling/spelling")
 
 const avoParse = require('../parse/avoParse')
 
@@ -9,7 +10,7 @@ describe("Docs", () => {
     avoParse.getVersions().forEach(version => {
       it(`${version.number} - sidebar file`, () => {
         assert(fs.existsSync(version.sidebar),
-          `Could not find sidebar for "${version.number}": ${version.sidebar}`)
+          `[${version.lang}-${version.number}] Could not find sidebar: ${version.sidebar}`)
       })
     })
   })
@@ -25,7 +26,7 @@ describe("Docs", () => {
           
           it(`${version.number} - ${section} - ${filename}`, () => {
             assert(fs.existsSync(filepath),
-              `Could not find "${filepath}", referenced in "${version.number}" sidebar under "${section}"`)
+              `[${version.lang}-${version.number}] Could not find "${filepath}", referenced in the sidebar under "${section}"`)
           })
         })
       }
@@ -36,7 +37,7 @@ describe("Docs", () => {
     const filenames = avoParse.getFilesSync(version.dir)
     filenames.forEach(filename => {
       if(filename.endsWith(".md")) {
-        describe(`${version.number} - ${filename}`, () => {
+        describe(`[${version.lang}-${version.number}] ${filename}`, () => {
           let content = fs.readFileSync(filename, 'utf-8')
 
           describe(`Links to local .md files`, () => {

@@ -8,8 +8,8 @@ describe("Search", () => {
     avoParse.getVersions().forEach(version => {
       it(`${version.number}`, () => {
         assert(fs.existsSync(version.index),
-          `Could not find index file for "${version.number}": ${version.index}
-          Try running search.js`)
+          `[${version.lang}-${version.number}] Could not find index file: ${version.index}
+          Try running build`)
       })
     })
   })
@@ -22,7 +22,7 @@ describe("Search", () => {
       indexFile.forEach(index => {
         it(`${version.number} - ${index.filename} title`, () => {
           assert(index.title.trim(),
-            `There doesn't seem to be a title for "${index.filename}" in the "${version.number}" sidebar`)
+            `[${version.lang}-${version.number}] There doesn't seem to be a title for "${index.filename}" in the sidebar`)
         })
       })
     })
@@ -34,7 +34,7 @@ describe("Search", () => {
 
       indexFile.forEach(index => {
         let filePath = path.join(version.dir, index.filename)
-        it(`${version.number} - ${index.filename} link to ${index.filename}`, () => {
+        it(`[${version.lang}-${version.number}] ${index.filename} link to ${filePath}`, () => {
           assert(fs.existsSync(filePath),
             `Could not find "${filePath}
             Linked to in "${version.number}" sidebar`)
